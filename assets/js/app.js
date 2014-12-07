@@ -1,0 +1,62 @@
+$(document).ready(function() {
+
+    // create a random snowflake
+    var Flake = new Snowflake();
+
+
+    $('#nameform').submit(function(e) {
+        e.preventDefault();
+        var name = $('#name').val();
+        Flake = new Snowflake(name);
+        $('#download').attr('href', Flake.getImage()).attr('download', Flake.name + ".png");
+    });
+
+
+    $('.flakes-random').click(function(e) {
+        e.preventDefault();
+        Flake = new Snowflake();
+        $('#name').val(Flake.name);
+    });
+
+    $('.flakes-save').click(function(e) {
+        e.preventDefault();
+        var img = Flake.getImage();
+        window.open(img);
+    });
+
+    $('.share a').click(function(e) {
+
+        var opts = {
+            'twitter' : {
+                text : "Make a snowflake from your name!",
+                via : "jjgrainger"
+            },
+            'facebook' : {
+                'u' : 'http://jjgrainger.co.uk/snowflakes'
+            }
+        }
+
+        var service = $(this).data('service');
+        var options = opts[service];
+
+        new Share(service, opts);
+
+    });
+
+
+    $('.js-info').click(function(e) {
+
+        e.preventDefault();
+
+        var target = $(this).attr('href');
+        $(target).fadeToggle(300);
+
+    });
+
+
+
+    $(window).on('resize', function() {
+        Flake.init();
+        Flake.draw();
+    });
+});

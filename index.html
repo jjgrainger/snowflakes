@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Snowflakes - Create your own snowflakes using your name</title>
+
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta property="og:title" content="Snowflakes">
+        <meta property="og:site_name" content="Snowflakes">
+        <meta property="og:description" content="Turn your name into a snowflake and share it with your friends and family with this simple web app.">
+        <meta property="og:url" content="http://jjgrainger.co.uk/snowflakes" />
+        <meta property="og:image" content="http://jjgrainger.co.uk/snowflakes/assets/img/snowflakes.png" />
+        <meta property="og:fb:app_id" content="560416180769539" />
+
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-title" content="Snowflakes">
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/grid.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/html5.js"></script>
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-57431913-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="row">
+                <div class="column one-half">
+                    <h1 class="title">Snowflakes <span class="beta">BETA</span></h1>
+                </div>
+                <div class="column one-half">
+                    <ul class="nav share right">
+                        <li><a href="#" data-service="twitter"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="#" data-service="facebook"><span class="fa fa-facebook"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+
+        <div id="container">
+            <div class="v-center">
+                <div class="v-center-inner">
+                    <canvas id="flakes" width="700" height="700"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="row">
+
+                <div class="column one-whole">
+                    <form id="nameform" class="nameform">
+                        <input type="text" id="name" class="name-input" value="Type your name and hit enter!">
+                    </form>
+
+                    <ul class="nav controls">
+                        <li>
+                            <a href="#info" class="js-info">
+                                <span class="fa fa-question"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flakes-save">
+                                <span class="fa fa-download"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flakes-random">
+                                <span class="fa fa-random"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </footer>
+
+
+        <div id="info" class="overlay">
+            <div class="v-center">
+                <div class="v-center-inner">
+                    <div class="row">
+                        <div class="column two-thirds m-one-whole push-sixth">
+                            <a href="#info" class="js-info overlay-close icon"><span class="fa fa-times"></span></a>
+                            <h1 class="center">About Snowflakes</h1>
+
+                            <p>
+                                A present from me to you! Type your name into the
+                                field at the top and turn your name into a snowflake.
+                                Each snowflake is unique to whatever you type.
+                            </p>
+
+                            <p>
+                                You can shuffle through random snowflakes with the random button. If you see a snowflake
+                                you like, you can save an image of the snowflake with the download button and share it with
+                                your friends and family!
+                            </p>
+
+                            <p>
+                                A present from <a target="_blank" href="http://twitter.com/jjgrainger">@jjgrainger</a>,
+                                source code available at <a target="_blank" href="http://github.com/jjgrainger/snowflakes">Github</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/share.js"></script>
+        <script src="assets/js/flakes.js"></script>
+        <script src="assets/js/app.js"></script>
+
+    </body>
+
+</html>
