@@ -1,8 +1,11 @@
 $(document).ready(function() {
 
+    $('#loading').delay(1000).fadeOut(300, function() {
+        $('#start').fadeIn(300);
+    });
+
     // create a random snowflake
     var Flake = new Snowflake();
-
 
     $('#nameform').submit(function(e) {
         e.preventDefault();
@@ -44,7 +47,7 @@ $(document).ready(function() {
     });
 
 
-    $('.js-info').click(function(e) {
+    $('.js-show').click(function(e) {
 
         e.preventDefault();
 

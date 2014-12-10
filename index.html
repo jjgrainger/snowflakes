@@ -45,6 +45,33 @@
 
     <body>
 
+        <div id="intro" class="overlay">
+            <div class="v-center">
+                <div class="v-center-inner">
+                    <div class="row">
+                        <div class="column two-thirds m-one-whole push-sixth center">
+                            <div id="loading">
+                                <span class="fa-spin fa fa-spinner" style="font-size: 2em;"></span>
+                            </div>
+                            <div id="start">
+                                <img src="assets/img/apple-touch-icon.png" width="200" height="200" alt="Snowflakes">
+                                <h1 class="center">Snowlakes</h1>
+                                <p>A Snowflake Generator</p>
+                                <p>Type your name into the textbox and hit enter to see your unique snowflake</p>
+                                <ul class="instructions">
+                                    <li><span class="icon"><span class="fa fa-random"></span></span> generate random snowflakes<br></li>
+                                    <li><span class="icon"><span class="fa fa-download"></span></span> Save your snowflake as an image</li>
+                                </ul>
+                                <br>
+                                <p><a href="#intro" class="btn js-show">Make Some Snowflakes</a></p>
+                                <p>Best viewed in Chrome</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <header class="header">
             <div class="row">
                 <div class="column one-half">
@@ -78,7 +105,7 @@
 
                     <ul class="nav controls">
                         <li>
-                            <a href="#info" class="js-info">
+                            <a href="#info" class="js-show">
                                 <span class="fa fa-question"></span>
                             </a>
                         </li>
@@ -104,7 +131,7 @@
                 <div class="v-center-inner">
                     <div class="row">
                         <div class="column two-thirds m-one-whole push-sixth">
-                            <a href="#info" class="js-info overlay-close icon"><span class="fa fa-times"></span></a>
+                            <a href="#info" class="js-show overlay-close icon"><span class="fa fa-times"></span></a>
                             <h1 class="center">About Snowflakes</h1>
 
                             <p>
@@ -128,6 +155,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <script src="assets/js/share.js"></script>
         <script src="assets/js/flakes.js"></script>
