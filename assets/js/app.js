@@ -14,11 +14,19 @@ $(document).ready(function() {
         $('#download').attr('href', Flake.getImage()).attr('download', Flake.name + ".png");
     });
 
+    var placeholder = 0;
+    $('#name').focus(function() {
+        if(!placeholder) {
+            $(this).val('');
+            placeholder = 1;
+        }
+    })
+
 
     $('.flakes-random').click(function(e) {
         e.preventDefault();
         Flake = new Snowflake();
-        $('#name').val(Flake.name);
+        // $('#name').val(Flake.name);
     });
 
     $('.flakes-save').click(function(e) {
