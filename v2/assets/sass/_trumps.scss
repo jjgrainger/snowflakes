@@ -1,0 +1,19 @@
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.midway {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.midway-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}

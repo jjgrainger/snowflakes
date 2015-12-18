@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Snowflakes v2</title>
+
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="format-detection" content="telephone=no" />
+
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Open+Sans:400,300,300italic,400italic,600italic,600,700italic,700|Lato:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="assets/css/app.min.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+      <header class="header">
+          <div class="row">
+              <div class="column one-half">
+                  <h1 class="title">Snowflakes <span class="beta">BETA</span></h1>
+                  <!-- <p class="sub-title">Created by <a href="#">jjgrainger</a></p> -->
+              </div>
+              <div class="column one-half">
+                  <ul class="nav share right">
+                      <li><a href="#" data-service="twitter"><span class="fa fa-twitter"></span></a></li>
+                      <li><a href="#" data-service="facebook"><span class="fa fa-facebook"></span></a></li>
+                  </ul>
+              </div>
+          </div>
+
+      </header>
+
+      <main id="container" class="container">
+        <div class="midway">
+          <div class="midway-inner">
+            <div class="row">
+              <div class="column one-whole">
+
+                <canvas id="flakes" class="-animate-spin"></canvas>
+
+                <!-- <div id="stats"></div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="controls">
+        <div class="row">
+          <div class="column one-third">&nbsp;</div>
+          <div class="column one-third">
+            <form action="#" id="form">
+              <input type="text" id="name" name="name" placeholder="Enter a name and click generate">
+            </form>
+          </div>
+          <div class="column one-third">
+            <a class="btn" href="#" id="random">Random</a>
+            <a class="btn" href="#" id="download">Download</a>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="assets/js/share.js"></script>
+      <script src="assets/js/flakes2.js"></script>
+      <script src="assets/js/app.js"></script>
+    </body>
+</html>

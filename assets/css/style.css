@@ -255,3 +255,33 @@ a {
         font-size: 12px;
     }
 }
+
+/*
+ * Colours
+ */
+
+html,
+body,
+#intro {
+    background-color: #7AC3CA;
+    color: #FEFFFF;
+}
+
+.icon, .share a, .controls a {
+    color: #fff;
+    border: 0;
+    background-color: #7AC3CA;
+
+    line-height: 2;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 3px;
+}
+
+
+.name-input {
+    color: #7AC3CA;
+    border-color: #7AC3CA;
+    border-radius: 3px;
+    /*background-color: #fff;*/
+}

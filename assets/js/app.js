@@ -4,8 +4,16 @@ $(document).ready(function() {
         $('#start').fadeIn(300);
     });
 
+    var name = undefined;
+
+    if(window.location.hash) {
+        name = window.location.hash.substring(1);
+        console.log(name);
+    }
+
     // create a random snowflake
-    var Flake = new Snowflake();
+    var Flake = new Snowflake(name);
+
 
     $('#nameform').submit(function(e) {
         e.preventDefault();

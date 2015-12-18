@@ -1,0 +1,42 @@
+.header {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5em 0;
+
+    background-color: #fff;
+}
+
+.header .row {
+  max-width: 90%;
+}
+
+.header .column {
+  padding-bottom: 0;
+}
+
+
+.title {}
+.sub-title {
+  font-size: 12px;
+}
+
+
+.nav {
+  overflow: hidden;
+}
+
+.nav li {
+  float: left;
+}
+
+.header .share li {
+  font-size: 1.5rem;
+  margin-left: .75rem;
+}
+
+.share li:hover .fa-twitter { color: #55acee; }
+.share li:hover .fa-facebook { color: #3b5998; }
