@@ -2,7 +2,7 @@
 
 A snowflake generator that can take a name or phrase and turn it into a snowflake. Uses HTML5 canvas and Javascript.
 
-[View the site](http://jjgrainger.co.uk/snowflakes)
+[View the site](https://snowflakes.jjgrainger.co.uk/)
 
 ## Author
 
